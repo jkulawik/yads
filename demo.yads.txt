@@ -57,14 +57,14 @@ If we reach the end of the node, we simply finish dialogue.
 {% if x == 1 %}
 	Conditional text.
 	Tabs are for convenience and aren't taken into consideration.
-{% elseif x == 2 %}
+{% elif x == 2 %}
 	Nested conditionals are not supported at the moment.
 {% else %}
 	Default version of the text.
 {% endif %}
 
 {% if x == 1 %}
-	Both the elseif and else segment are optional.
+	Both the elif and else segment are optional.
 {% endif %}
 
 The dialogue handler evaluates conditions on the go.
