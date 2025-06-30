@@ -1,3 +1,4 @@
+![](https://img.itch.zone/aW1nLzIxODk3NjMwLnBuZw==/original/TnZikq.png)
 # YADS - Yet Another Dialogue System
 
 YADS is a lightweight, text-based dialogue system for Godot 4.
