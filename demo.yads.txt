@@ -1,16 +1,29 @@
 === basics
 # This is a comment.
 # Nodes start with === followed by their name.
+{# This comment style is also supported,
+and it can be multi-line. #}
 
 We send text to the GUI until a double line break, a code snippet,
 a list of replies or the end of a node.
 
 Character name:
 By placing a : at the end of a new line we change the character that is speaking.
+
 Subsequent blocks will continue to use the same character.
 Character names reset to empty when changing nodes.
 The handler sends a signal which lets your code react to a character change,
 e.g. by changing a character icon or moving a 3D camera.
+
+Character name (relaxed, camera_2):
+You can add extra metadata to the character change by putting a comma-separated
+list in brackets. This metadata will also be emitted so that you can
+enrich character changes with emotions, more complex camera changes or other things.
+Note that metadata cannot contain spaces.
+
+NO_NAME(metadata_tag):
+Character names can also be reset with the special NO_NAME name.
+These blocks can contains metadata as any other character change.
 
 BBcode is supported,
 [shake rate=20.0 level=5 connected=1]
